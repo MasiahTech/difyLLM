@@ -1,4 +1,5 @@
 x-shared-env: &shared-api-worker-env
+privileged: true
   LOG_LEVEL: ${LOG_LEVEL:-INFO}
   LOG_FILE: ${LOG_FILE:-}
   DEBUG: ${DEBUG:-false}
@@ -672,4 +673,4 @@ networks:
 volumes:
   oradata:
   dify_es01_data:
-privileged: true
+

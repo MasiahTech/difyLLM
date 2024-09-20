@@ -366,7 +366,7 @@ services:
       - web
     ports:
       - "${EXPOSE_NGINX_PORT:-80}:${NGINX_PORT:-81}"
-      - "${EXPOSE_NGINX_SSL_PORT:-443}:${NGINX_SSL_PORT:-442}"
+      - "${EXPOSE_NGINX_SSL_PORT:-442}:${NGINX_SSL_PORT:-442}"
 
   # The Weaviate vector store.
   weaviate:

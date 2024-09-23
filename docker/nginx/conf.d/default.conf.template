@@ -5,22 +5,22 @@ server {
     server_name ${NGINX_SERVER_NAME};
 
     location /console/api {
-      proxy_pass http://api:5001;
+      proxy_pass http://192.168.0.3192.168.32.3:10000;
       include proxy.conf;
     }
 
     location /api {
-      proxy_pass http://api:5001;
+      proxy_pass http://192.168.0.3192.168.32.3:10000;
       include proxy.conf;
     }
 
     location /v1 {
-      proxy_pass http://api:5001;
+      proxy_pass http://192.168.0.3192.168.32.3:10000;
       include proxy.conf;
     }
 
     location /files {
-      proxy_pass http://api:5001;
+      proxy_pass http://192.168.0.3192.168.32.3:10000;
       include proxy.conf;
     }
 
